@@ -9523,4 +9523,3 @@
 	Object.defineProperty(exports, '__esModule', { value: true });
 
 })(this.window = this.window || {});
-//# sourceMappingURL=index.iife.js.map

@@ -9512,4 +9512,3 @@ function roundMoment(m, precision, key, direction = 'round') {
 const SvelteGantt = Gantt;
 
 export { MomentSvelteGanttDateAdapter, SvelteGantt, SvelteGanttDependencies, SvelteGanttExternal, SvelteGanttTable };
-//# sourceMappingURL=index.js.map
