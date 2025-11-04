@@ -159,6 +159,18 @@ export interface SvelteGanttOptions {
      * Headers of table, used with SvelteGanttTable module
      */
     tableHeaders?: TableHeader[];
+
+    /**
+     * Enable creating new tasks by dragging on empty space in gantt
+     */
+    enableCreateTask?: boolean;
+
+    /**
+     * Called when a new task is created by dragging on empty space in gantt
+     * @param task
+     * @returns
+     */
+    onCreatedTask?: (task: SvelteTask) => void;
 }
 export interface SvelteGanttComponent extends Component<SvelteGanttOptions> {
     api: GanttApi;
@@ -180,4 +192,7 @@ export interface SvelteGanttComponent extends Component<SvelteGanttOptions> {
     getTasks(resourceId: any): SvelteTask[];
     getRow(id: any): SvelteRow;
 }
+
+export type { SvelteTask } from './core/task';
+
 export {};
